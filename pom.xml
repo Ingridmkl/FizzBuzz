@@ -35,6 +35,13 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        <!-- Enable running JUnit4 tests under the JUnit Platform (so the Cucumber JUnit4 runner is executed) -->
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
         <!-- Cucumber for JVM (JUnit Platform engine + Java glue) -->
         <dependency>
             <groupId>io.cucumber</groupId>

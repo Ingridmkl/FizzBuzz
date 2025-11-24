@@ -22,13 +22,6 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- Ensure junit-platform commons available to the test runtime for Cucumber engine -->
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-commons</artifactId>
-            <version>1.10.0</version>
-            <scope>test</scope>
-        </dependency>
         <!-- Add cucumber-junit (JUnit 4 runner) and JUnit 4 to run Cucumber scenarios without JUnit Platform engine conflicts -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -49,12 +42,7 @@
             <version>7.32.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit-platform-engine</artifactId>
-            <version>7.32.0</version>
-            <scope>test</scope>
-        </dependency>
+        <!-- Note: we intentionally do not include the cucumber JUnit Platform engine to avoid discovery conflicts; using the JUnit4 runner instead -->
     </dependencies>
 
     <build>

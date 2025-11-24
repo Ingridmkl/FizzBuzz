@@ -20,7 +20,7 @@ public class StepDefinitions {
         this.result = FizzBuzz.apply(this.number);
     }
 
-    @Then("the result is \"{string}\"")
+    @Then("the result is {string}")
     public void the_result_is(String expected) {
         assertEquals(expected, this.result);
     }

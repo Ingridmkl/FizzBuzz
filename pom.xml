@@ -22,6 +22,13 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- Ensure junit-platform commons available to the test runtime for Cucumber engine -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-commons</artifactId>
+            <version>1.10.0</version>
+            <scope>test</scope>
+        </dependency>
         <!-- Cucumber for JVM (JUnit Platform engine + Java glue) -->
         <dependency>
             <groupId>io.cucumber</groupId>
